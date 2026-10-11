@@ -1,0 +1,15 @@
+ACTUALIZACIÓN 1.1 — REPORTES S&S GROUP
+
+Incluye selección múltiple de riesgos y desvíos, y recomendaciones relacionadas editables.
+El guardado mientras escribís usa solamente el reporte actual, con una pausa de 750 ms; ya no copia el historial en cada letra. Los PDF nuevos se almacenan de forma más compacta. Conserva lectura de PDF y respaldos anteriores.
+
+PARA GENERAR EL APK
+1. En el repositorio GitHub usado para el APK, reemplazar app/build.gradle, MainActivity.java y los archivos de app/src/main/assets/www incluidos en este ZIP. Agregar safety.js en la misma carpeta que app.js.
+2. Confirmar los cambios (Commit changes).
+3. Actions > Generar APK Samsung > Run workflow.
+4. Descargar el artifact Reportes-SSGroup-Samsung-APK, extraer el APK y pasarlo al Samsung.
+5. Antes de instalar, descargar una copia desde Instalación y respaldo. Si Android rechaza la actualización por firma distinta (cada compilación usa una clave debug nueva), conservar esa copia, desinstalar la versión anterior, instalar e importar el respaldo.
+
+VERIFICACIÓN
+Comprobada sintaxis JavaScript, guardado del reporte actual sin historial durante escritura, recomendaciones por desvío, selección de múltiples riesgos y compatibilidad de PDF anteriores/nuevos.
+La compilación Android se realiza con el workflow. Pendiente prueba física en S23: generar varios reportes con fotos y escribir en el segundo y los siguientes, cerrar/reabrir, revisar borradores y PDF.
